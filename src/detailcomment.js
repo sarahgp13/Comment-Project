@@ -39,7 +39,7 @@ export default class DetailComment extends React.Component {
     render() {
         console.log(this.state.name)
         return (
-            <div>
+            <div class="comments">
                 <span>
                 <label>ID:</label>
                 <br/>

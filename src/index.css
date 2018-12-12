@@ -3,11 +3,21 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex-flow: column wrap;
-  /* justify-content: center; */
-  /* margin-top: 20px;
-  margin-left: 50px; */
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   font-size: 18px;
   padding: 30px;
+  background-color: lavender;
+}
+.comments {
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
 }
 .button-1 {
   width: 150px;
