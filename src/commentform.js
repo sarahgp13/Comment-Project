@@ -80,7 +80,7 @@ export default class CommentForm extends React.Component {
                     />
                 {this.state.comment}
                 <br/>
-                <button class="button-2" type="submit">Update</button>
+                <button class="button-2" type="submit">Update</button> 
                 <button class="button-delete" onClick={this.deleteComment}>Delete</button>
                 {/* <hr/> */}
                 

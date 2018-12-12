@@ -41,9 +41,15 @@ export default class DetailComment extends React.Component {
         return (
             <div>
                 <span>
+                <label>ID:</label>
+                <br/>
                 {this.props._id}
                 <br/>
+                <label>Name:</label>
+                <br/>
                 {this.state.name}
+                <br/>
+                <label>Comment:</label>
                 <br/>
                 {this.state.comment} 
                 {/* change commenttext to comment */}
@@ -58,16 +64,6 @@ export default class DetailComment extends React.Component {
                         ></CommentForm> : 
                         <Fragment></Fragment>
                         }
-
-                {/* two delete buttons? */}
-                {/* <CommentForm 
-                _id={this.props._id}
-                name={this.props.name}
-                comment={this.props.commenttext}
-                ></CommentForm>
-                <br/>
-                <button  onClick={this.deleteComment}>Delete</button>
-                <hr/> */}
                 <hr/>
                 </span>
             </div>
