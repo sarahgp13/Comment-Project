@@ -38,7 +38,7 @@ getAllComments=async()=>{
   render() {
     return (
         <div class="form">
-            <button class="button-1" onClick={this.getAllComments}>Get Comments</button>
+            <button class="button-1" onClick={this.getAllComments}>get comments</button>
             <ul>
                 {this.state.commentsId.map((commentId, i)=>{
                     return <li key={i}>
@@ -48,6 +48,7 @@ getAllComments=async()=>{
                     </li>
                 })}
             </ul>
+            <br/>
             <CommentForm></CommentForm>
         </div>
         

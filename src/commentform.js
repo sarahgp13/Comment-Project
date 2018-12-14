@@ -62,9 +62,9 @@ export default class CommentForm extends React.Component {
     render(){
         console.log (this.state.name)
         return(
-            <form class="form" onSubmit={this.handleSubmit}>
+            <form class="form-2" onSubmit={this.handleSubmit}>
                 {this.state._id}
-                <label>Name</label>
+                <label>name</label>
                 <input 
                     class="input"
                     defaultValue={this.state.name} 
@@ -72,7 +72,7 @@ export default class CommentForm extends React.Component {
                     />
                 {this.state.name}
                 <br/>
-                <label>Comment</label>
+                <label>comment</label>
                 <input 
                     class="input"
                     defaultValue={this.state.comment} 
@@ -80,8 +80,8 @@ export default class CommentForm extends React.Component {
                     />
                 {this.state.comment}
                 <br/>
-                <button class="button-2" type="submit">Update</button> 
-                <button class="button-delete" onClick={this.deleteComment}>Delete</button>
+                <button class="button-2" type="submit">update</button> 
+                <button class="button-delete" onClick={this.deleteComment}>delete</button>
                 {/* <hr/> */}
                 
             </form>

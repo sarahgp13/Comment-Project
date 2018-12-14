@@ -39,23 +39,22 @@ export default class DetailComment extends React.Component {
     render() {
         console.log(this.state.name)
         return (
-            <div class="comments">
+            <div>
                 <span>
-                <label>ID:</label>
+                <label>id:</label>
                 <br/>
                 {this.props._id}
                 <br/>
-                <label>Name:</label>
+                <label>name:</label>
                 <br/>
                 {this.state.name}
                 <br/>
-                <label>Comment:</label>
+                <label>comment:</label>
                 <br/>
                 {this.state.comment} 
                 {/* change commenttext to comment */}
                 <br/>
-                <br/>
-                        <button class="button-edit" onClick={this.editClick}>Edit</button>
+                        <button class="button-edit" onClick={this.editClick}>edit</button>
                         {this.state.edit ?
                             <CommentForm 
                             my_id={this.state._id} 
@@ -64,8 +63,9 @@ export default class DetailComment extends React.Component {
                         ></CommentForm> : 
                         <Fragment></Fragment>
                         }
-                <hr/>
+                        <br/>
                 </span>
+                <br/>
             </div>
         )
     }
